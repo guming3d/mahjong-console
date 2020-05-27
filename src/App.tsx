@@ -17,7 +17,7 @@ const App = () => {
         <div className="breadcrumbs">
           <BreadcrumbsMJ></BreadcrumbsMJ>
         </div>
-        <div className="basic-form">
+        <div>
           <BasicForm></BasicForm>
         </div>
       </div>

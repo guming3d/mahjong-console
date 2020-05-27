@@ -1,51 +1,60 @@
 import React from "react";
-import { FormGroup, InputGroup, Card, Elevation } from "@blueprintjs/core";
+import { Button, Card, Elevation } from "@blueprintjs/core";
 import styles from "./BasicForm.module.scss";
 
 const BasicForm: React.FC = () => {
+  // @ts-ignore
   return (
     <div>
-      <h1>Cluster Parameters</h1>
-      <Card
-        interactive={true}
-        elevation={Elevation.ONE}
-        className={styles.formMargin}
-      >
-        <FormGroup
-          // helperText="Helper text with details..."
-          label="Cluster Name"
-          labelFor="cluster-name"
-          labelInfo="(required)"
+      <h1>Please select target HU</h1>
+      {/*<div style={{ display: "flex" }}>*/}
+      <div className={styles.main}>
+        <div
+          style={{
+            padding: "5px",
+            width: "40%",
+            height: "800px"
+          }}
         >
-          <InputGroup
-            id="cluster-name"
-            placeholder="Please enter your cluster name"
-          />
-        </FormGroup>
-        <FormGroup
-          // helperText="Helper text with details..."
-          label="Node Instance Type"
-          labelFor="node-type"
+          <Card
+            interactive={true}
+            elevation={Elevation.ONE}
+            className={styles.formMargin}
+          >
+            <div className={styles.colum}>
+              <label>HU List</label>
+            </div>
+          </Card>
+        </div>
+        <div
+          style={{
+            padding: "2px",
+            width: "40%",
+            flex: 1
+          }}
         >
-          <div className="bp3-select bp3-fill .modifier" id="node-type">
-            <select>
-              <option selected>m5a.large</option>
-              <option value="1">m5a.xlarge</option>
-              <option value="2">m5a.2xlarge</option>
-              <option value="3">m5a.4xlarge</option>
-              <option value="4">m5a.8xlarge</option>
-            </select>
-          </div>
-          <div className="bp3-select bp3-fill .modifier" id="node-type">
-            <select>
-              <option selected>Select instance type</option>
-              <option value="1">m5a.xlarge</option>
-              <option value="2">m5a.2xlarge</option>
-              <option value="3">m5a.4xlarge</option>
-              <option value="4">m5a.8xlarge</option>
-            </select>
-          </div>
-        </FormGroup>
+          <Card
+            interactive={true}
+            elevation={Elevation.ONE}
+            className={styles.formMargin}
+          >
+            <div className={styles.colum}>
+              <div>
+                <label>Hu description</label>
+              </div>
+              <h5>
+                <a href="#">Dataset Dashboards</a>
+              </h5>
+              <p>
+                Stats of dataset completeness and reference data join
+                percentages.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+      <Card>
+        <Button rightIcon="arrow-right" intent="success" text="Next step" />
       </Card>
     </div>
   );
