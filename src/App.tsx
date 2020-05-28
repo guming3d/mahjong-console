@@ -7,7 +7,8 @@ import "normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import { BreadcrumbsMJ } from "features/BreadcrumbsMJ/BreadcrumbsMJ";
-import BasicForm from "features/BasicForm/BasicForm";
+// import BasicForm from "features/BasicForm/BasicForm";
+import HuEditor from "features/HuEditor/HuEditor";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           <BreadcrumbsMJ></BreadcrumbsMJ>
         </div>
         <div>
-          <BasicForm></BasicForm>
+          <HuEditor></HuEditor>
         </div>
       </div>
     </Provider>
