@@ -26,13 +26,20 @@ const HuSelector: React.FC = () => {
     setName(e.target.value);
   };
 
-  function updateDescription(): void {
-    setHuDescription("asdfasdf")
+  function updateDescription(input: string): void {
+    setHuDescription(input)
   }
 
   const numbers = ["1", "2", "3", "4", "5"];
   const listItems = numbers.map((number) =>
-    <ul><Button onClick={updateDescription}>Hu {number}</Button></ul>
+     <Card
+    interactive={true}
+    elevation={Elevation.THREE}
+    className={styles.formMargin}
+    onClick={() => updateDescription(number)}
+    >
+    <label>Hu {number}</label>
+  </Card>
   );
 
   return (
@@ -44,7 +51,6 @@ const HuSelector: React.FC = () => {
           style={{
             padding: "2px",
             width: "40%",
-            height: "800px"
           }}
         >
           <Card
@@ -52,17 +58,7 @@ const HuSelector: React.FC = () => {
             elevation={Elevation.ONE}
             className={styles.formMargin}
           >
-            <div className={styles.colum}>
-              <label>HU List</label>
-              <label>{name}</label>
-              <input
-                type="text"
-                placeholder="name"
-                value={name}
-                onChange={onNameChange}
-              />
-              <ul>{listItems}</ul>
-            </div>
+          <ul>{listItems}</ul>
           </Card>
         </div>
         <div

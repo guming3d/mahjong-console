@@ -13,7 +13,6 @@ const HuEditor: React.FC = () => {
           style={{
             padding: "2px",
             width: "30%",
-            height: "800px"
           }}
         >
           <Card
@@ -30,7 +29,6 @@ const HuEditor: React.FC = () => {
           style={{
             padding: "2px",
             width: "30%",
-            height: "800px"
           }}
         >
           <Card
