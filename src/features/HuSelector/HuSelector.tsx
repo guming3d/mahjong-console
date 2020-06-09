@@ -21,7 +21,8 @@ const HuSelector: React.FC = () => {
     '  "hulist": [\n' +
     '      {"name": "HU 1", "description": "HU 1 is to demo the docker usage for Mahjong project"},\n' +
     '      {"name": "HU 2", "description": "HU 2 is to demo the kubernate usage for Mahjong project"},\n' +
-    '      {"name": "HU 3", "description": "HU 3 is to demo the Spark usage for Mahjong project"}\n' +
+    '      {"name": "HU 3", "description": "HU 3 is to demo the Spark usage for Mahjong project"},\n' +
+    '      {"name": "HU 4", "description": "HU 4 is to demo the Map Reduce usage for Mahjong project"}\n' +
     '    ]\n' +
     '}');
 

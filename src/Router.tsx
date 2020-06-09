@@ -16,7 +16,7 @@ export default function RouterApp () {
             <HuEditorPage />
           </Route>
           <Route path="/">
-            <Home />
+            <HuSelectorPage />
           </Route>
         </Switch>
       </div>
@@ -24,9 +24,7 @@ export default function RouterApp () {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+
 
 function HuSelectorPage() {
   return <AppSelector></AppSelector>;
