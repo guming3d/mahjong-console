@@ -1,0 +1,55 @@
+import React from "react";
+import "es6-shim";
+import "reflect-metadata";
+import {classToPlain, deserialize, plainToClass, serialize} from "class-transformer";
+import {Photo} from "./Photo.txt";
+
+import {Label} from "@blueprintjs/core";
+
+const TestApp = () => {
+  let photoJson = {
+    id: "1",
+    filename: "myphoto.jpg",
+    description: "about my photo",
+    tags: [
+      "me",
+      "iam"
+    ],
+    albums: [{
+      id: "1",
+      name: "My life"
+    },
+      {
+        id: "2",
+        name: "My young years"
+      }]
+  };
+
+  let photo = plainToClass(Photo, photoJson);
+  console.log("deserialized object: " , photo);
+  console.log("-----------------------------");
+  // @ts-ignore
+  console.log("Trying to find album: ", photo.albums[0]);
+  console.log("-----------------------------");
+
+// now check serialization
+
+  let newPhotoJson = classToPlain(photo);
+  console.log("serialized object: " , newPhotoJson);
+  console.log("minggu >>deserialize output:", serialize(photo));
+  // let newObj = ;
+  // deserialize(newObj,serialize(photo));
+  // let aaa =""
+  // deserialize(Photo, aaa);
+
+  // console.log("minggu >> output object: ", aaa )
+  console.log("-----------------------------");
+  return (
+
+      <div className="bp3-dark">
+        <Label>{photo.filename}</Label>
+      </div>
+
+  );
+}
+export default TestApp;

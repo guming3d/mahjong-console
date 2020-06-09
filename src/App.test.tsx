@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import AppSelector from "./AppSelector";
 
 test("renders initial count", () => {
-  render(<App />);
+  render(<AppSelector />);
   const zero = screen.getByText("0");
   expect(zero).toBeInTheDocument();
 });

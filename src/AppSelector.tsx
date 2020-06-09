@@ -7,10 +7,9 @@ import "normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import { BreadcrumbsMJ } from "features/BreadcrumbsMJ/BreadcrumbsMJ";
-import HuEditor from "features/HuEditor/HuEditor";
 import HuSelector from "./features/HuSelector/HuSelector";
 
-const App = () => {
+const AppSelector = () => {
   return (
     <Provider store={store}>
       <div className="bp3-dark">
@@ -19,12 +18,13 @@ const App = () => {
           <BreadcrumbsMJ></BreadcrumbsMJ>
         </div>
         <div>
-          <HuSelector></HuSelector>
-          <HuEditor></HuEditor>
+          {/*<TabsExample id={"exanoke"}></TabsExample>*/}
+          <HuSelector/>
+          {/*<HuEditor></HuEditor>*/}
         </div>
       </div>
     </Provider>
   );
 };
 
-export default App;
+export default AppSelector

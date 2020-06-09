@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using [cra-template-typekit](https://github.com/rrebase/cra-template-typekit)
+This project was bootstrapped with [Create React AppSelector](https://github.com/facebook/create-react-app) using [cra-template-typekit](https://github.com/rrebase/cra-template-typekit)
 
 ## Available Scripts
 
@@ -52,6 +52,6 @@ Same as `yarn lint`, but also automatically fixes problems.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can learn more in the [Create React AppSelector documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
