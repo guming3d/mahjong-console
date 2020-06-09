@@ -67,9 +67,9 @@ const HuSelector: React.FC = () => {
   </Card>
   );
 
-  let mapTest = [];
+  let huList = [];
   for(const i of huMetadata.hulist){
-    mapTest.push(
+    huList.push(
       <Card
         interactive={true}
         elevation={Elevation.THREE}
@@ -95,11 +95,11 @@ const HuSelector: React.FC = () => {
       <div className={styles.main}>
         <div
           style={{
-            padding: "2px",
-            width: "40%",
+            padding: "1px",
+            width: "30%"
           }}
         >
-          <ul>{mapTest}</ul>
+          <ul className={styles.left}>{huList}</ul>
 
         </div>
         <div
@@ -129,7 +129,7 @@ const HuSelector: React.FC = () => {
         <Button
           rightIcon="arrow-right"
           intent="success"
-          text="Next step"
+          text="Edit selected HU"
           onClick={handleClick}
         />
       </Card>

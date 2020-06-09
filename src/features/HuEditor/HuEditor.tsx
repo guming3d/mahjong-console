@@ -70,7 +70,7 @@ const HuEditor: React.FC = (props) => {
         </div>
       </div>
       <Card>
-        <Button rightIcon="arrow-right" intent="success" text="Next step" onClick={handleClick}/>
+        <Button rightIcon="arrow-right" intent="success" text="Submit Hu Metadata" onClick={handleClick}/>
       </Card>
     </div>
   );

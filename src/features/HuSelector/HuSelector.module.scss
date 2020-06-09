@@ -1,13 +1,20 @@
 .formMargin {
-  margin-top: 0px;
+  margin-top: 5px;
   border: 1px solid gainsboro;
 }
 
 .main {
   border: 1px solid white;
+  margin-left: 2px;
   display: flex;
+  alignment: left;
 }
 
 .colum {
   height: 720px;
  }
+
+.left {
+  alignment: left;
+  margin-left: 1px;
+}
